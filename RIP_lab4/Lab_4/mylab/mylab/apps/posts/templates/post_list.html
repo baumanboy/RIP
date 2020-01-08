@@ -1,0 +1,17 @@
+{% extends 'base_template.html' %}
+
+{% block title %} {% endblock %}
+
+{% block navbar-links %} {% endblock %}
+
+{% block body %}
+
+    <h1>Posts</h1>
+    <ul>
+        {% for post in object_list%}
+            {%include 'element.html' with post=post %}
+
+        {% endfor %}
+    </ul>
+
+{% endblock %}

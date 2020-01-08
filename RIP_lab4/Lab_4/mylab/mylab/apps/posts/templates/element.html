@@ -1,0 +1,15 @@
+
+ <div class="jumbotron">
+        <div class="media-left media-middle">
+            <a href="#">
+              <img class="media-object" src="{{ post.post_image }}" alt="{{ post.post_name }}" width=200>
+            </a>
+        </div>
+        <div class="media-body">
+            <br/>
+            <h2>{{ post.post_name }}</h2>
+            <p><span class="label label-default">{{ post.pub_data }}</span></p>
+            <p>{{ post.post_text }}</p>
+            <p><a class="btn btn-primary btn-lg" href="post/{{ post.id }}" role="button">Learn more</a></p>
+        </div>
+    </div>
